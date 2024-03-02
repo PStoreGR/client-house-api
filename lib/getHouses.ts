@@ -1,5 +1,5 @@
 export default async function getHouses () {
-    const res = await fetch( `http://localhost:8080/houses` );
+    const res = await fetch( `https://server-houseapi.pstoregr.dev/houses` );
     if ( res.ok ) {
         const data = await res.json();
         return data;
